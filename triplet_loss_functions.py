@@ -19,7 +19,7 @@ def triplet_loss_func(y_true, y_pred, alpha=0.3):
 					  where the loss is applied to the network in the compile statement 
 					  as usual.
 	'''
-	anchor, positive, negative = y_pred[0], y_pred[1], y_pred[2]
+	anchor, positive, negative = y_pred[:,0:3], y_pred[:,3:6], y_pred[:,6:9]
 
 	positive_dist = tf.reduce_sum(tf.square(tf.subtract(anchor, positive)), -1)
 	negative_dist = tf.reduce_sum(tf.square(tf.subtract(anchor,negative)), -1)
