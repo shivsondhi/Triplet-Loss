@@ -32,7 +32,7 @@ The positive pair is the anchor and the positive image whereas the negative pair
 
 The mathematical fuction for triplet loss is as follows:
 
-http://latex.codecogs.com/gif.latex?L%20%3D%20%5Csum_%7Bi%7D%5E%7BN%7D%20%5B%20%5Cleft%20%5C%7Cf%28x_%7Bi%7D%5E%7Ba%7D%29%20-%20f%28x_%7Bi%7D%5E%7Bp%7D%29%5Cright%20%5C%7C_%7B2%7D%5E%7B2%7D%20-%20%5Cleft%20%5C%7C%20f%28x_%7Bi%7D%5E%7Ba%7D%29%20-%20f%28x_%7Bi%7D%5E%7Bn%7D%29%20%5Cright%20%5C%7C_%7B2%7D%5E%7B2%7D%20&plus;%5Calpha%20%5D_%7B&plus;%7D
+![equation]http://latex.codecogs.com/gif.latex?L%20%3D%20%5Csum_%7Bi%7D%5E%7BN%7D%20%5B%20%5Cleft%20%5C%7Cf%28x_%7Bi%7D%5E%7Ba%7D%29%20-%20f%28x_%7Bi%7D%5E%7Bp%7D%29%5Cright%20%5C%7C_%7B2%7D%5E%7B2%7D%20-%20%5Cleft%20%5C%7C%20f%28x_%7Bi%7D%5E%7Ba%7D%29%20-%20f%28x_%7Bi%7D%5E%7Bn%7D%29%20%5Cright%20%5C%7C_%7B2%7D%5E%7B2%7D%20&plus;%5Calpha%20%5D_%7B&plus;%7D
 
 Triplet Loss can be implemented directly as a loss function in the compile method, or it can be implemented as a merge mode with the
 anchor, positive and negative embeddings of three individual images as the three branches of the merge function.
