@@ -23,6 +23,7 @@ The data_format is changed to 'channels_first' by default in the keras.json file
 
 Triplet loss was first implemented by Florian Schroff and Dmitry Kalenichenko in the paper that introduced FaceNet. It is computed using 
 three images; 
+
     a. anchor image     -   The user defined anchor.
     b. positive image   -   Image of the same class as the anchor.
     c. negative image   -   Image of a different class.
